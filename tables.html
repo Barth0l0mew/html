@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            border: 2px solid black;
+            width: 350px;
+            height: 300px;
+            text-align: center;
+            font-size: 100px;
+        }
+        table{
+            border: 2px solid red;
+            border-collapse: collapse;
+        }
+        th{
+            border: 2px solid black;
+        }
+        tr:nth-child(odd) td:nth-child(even){
+            color: blue;
+        }
+        tr:nth-child(even) td:nth-child(odd){
+            color: blue;
+        }
+        tr:nth-child(odd) td:nth-child(odd){
+            color: red;
+        }
+        tr:nth-child(even) td:nth-child(even){
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>number</th>
+                <th>name</th>
+                <th>totel</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Nesciunt, corporis!</td>
+                <td>Vero, fuga.</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Adipisci, eum!</td>
+                <td>Culpa, ducimus.</td>
+            </tr>
+        </tbody>
+        
+    </table>
+</body>
+</html>
