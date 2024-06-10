@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div>img{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            
+        }
+        #aqua{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+           
+        }
+        
+        #aqua>img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .fish{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .fish{
+            border-radius: 50%;
+            
+        }
+       #guppy{
+        left: 50px;
+        top: 50px;
+       }
+       #angel{
+        left: 250px;
+        top: 50px;
+       }
+       div>div:nth-child(2n){
+        left: calc(100%/5);
+        top: calc(100%/5)
+       }
+       div>div:nth-child(2n+1){
+        top: calc(100%/3);
+        left:calc(100%/3)
+       }
+    </style>
+</head>
+<body>
+    <div id="aqua"><img src="img/aquarium.jpg" />
+        <div id="guppy" class="fishs"><img class="fish" src="img/guppy.jpg" /></div>
+        <div id="angel" class="fishs"><img  class="fish"src="img/angel.jpg" /></div>
+        <div id="betta" class="fishs"><img class="fish" src="img/betta.jpg" /></div>
+        <div id="corridors" class="fishs"><img class="fish" src="img/corridors.jpg" /></div>
+        <div id="gourami" class="fishs"><img class="fish"src="img/gourami.jpg" /></div>
+        <div id="labeo" class="fishs"><img class="fish" src="img/labeo.jpg" /></div>
+    </div>
+    <script>
+       document.querySelectorAll(".fishs").forEach(el=>{
+        el.style.left=el.id*50+"px";
+        console.log(el);
+       });
+      
+      
+    </script>
+   
+</body>
+
+</html>

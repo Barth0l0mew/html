@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .box{
+            display: flex;
+            border: 1px solid black;
+            background-color: aqua;
+            margin: 10px;
+            padding: 10px;
+            flex-direction: row;    
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .child{
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: blueviolet;
+            margin: 10px;
+            padding: 10px;
+            width: 100px;
+            height: 100px;
+            flex: 1 0 100px;
+
+        }
+        .child1{
+            
+        }
+        .child2{
+            
+        }
+        .child3{
+            
+        }
+        .child4{
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="child child1">One</div>
+        <div class="child child2">Two</div>
+        <div class="child child3">Three</div>
+        <div class="child child4">Four</div>
+    </div>  
+</body>
+</html>

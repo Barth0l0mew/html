@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+
+        body{
+            box-sizing: border-box;
+            position: relative;
+
+        }
+        div{
+            margin: 5px;
+            width:  30%;
+            text-align: center;
+            line-height: 50px;
+            background-color: aquamarine;
+            border: 1px solid black;
+        }
+        .static{
+            position: static;
+            padding: 10px;
+            background-color: aquamarine;
+            border: 1px solid black;
+            width: 30%;
+            height: 50px;
+        }
+        .relative{
+            position: relative;
+            left: 100px;
+            width: 50%;
+            height: 30px;
+           
+        }
+        .fixed  {
+            position: fixed;
+        }
+        .absolute{
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+        }
+        .sticky{
+            position: sticky;
+            top: 20px;
+            left: 100px;
+        }
+        table{
+            margin: 80px;
+            width: 200%;
+            
+        }
+        td{
+            border: 1px solid black;
+            width:30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="static">
+        Static div 1   
+    </div>
+    <div class="static">
+        Static div 2
+    </div>
+    <div class="sticky"> Sticky div 1</div>
+   
+    <div class="relative"> 
+        <div class="relative">Relative div 1</div>
+    <div class="relative">Relative div 2</div>
+    </div>
+    <div class="fixed">Fixed div1 </div>
+    <div class="absolute">
+        absolute div 1
+
+    </div>
+    <div class="staticky"> Sticky div 1</div>
+    <table>
+       <tr>
+        <td class="td">Lorem.</td>
+        <td class="td">Eum?</td>
+        <td class="td">Fuga.</td>
+        <td class="td">Molestiae?</td>
+        <td class="td">Illum!</td>
+       </tr>
+    </table>
+</body>
+</html>
