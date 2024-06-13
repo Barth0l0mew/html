@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    color: rgb(72, 101, 128);
+}
+body{
+    background-color: rgba(33, 37, 41);
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+header, main, footer{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+main{
+    flex: 1 1 auto;
+   
+}
+main>div{
+    display: flex;
+    justify-content: center;
+}
+pre{
+    width: 50%;
+}
